@@ -55,4 +55,4 @@ function NavTabs({ currentPage, handlePageChange }) {
   );
 }
 
-export default Header;
+export default NavTabs;
