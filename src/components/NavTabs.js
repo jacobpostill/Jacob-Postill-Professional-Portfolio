@@ -3,6 +3,7 @@ import '../css/NavTabs.css';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
+    <div className='navTabsClass'>
     <ul className="nav nav-tabs">
       <li className="nav-item title">
         <a href="#Jacob" className="nav-link">Jacob</a>
@@ -53,6 +54,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </div>
   );
 }
 
