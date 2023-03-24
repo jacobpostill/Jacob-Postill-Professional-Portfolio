@@ -1,0 +1,106 @@
+:root {
+    --background: #26242261;
+    --black: #262422;
+    --blue: #3C92E6;
+    --white: #dbdbdb;
+    --grey: #393939;
+  }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.project-name {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    font-size: clamp(16px, 3vmin, 46px);
+    background-color: #262422a8;
+    padding: 8px;
+}
+
+.profolio-container {
+    max-width: 1480px;
+    margin: 20px;
+    margin-bottom: 150px;
+    padding: 20px;
+    background-color: #26242261;
+}
+
+.display-btn {
+    position: relative;
+}
+
+.display-btn:hover .hover-btn {
+    opacity: 1;
+}
+
+.display-btn:hover .project-img {
+    opacity: 0.6;
+}
+
+.project-img {
+    margin: 10px;
+    transition: 0.3s;
+    position: relative;
+    transition: 0.3s;
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
+.link-btn {
+    background: none;
+    border: none;
+    font-size: clamp(16px, 3vmin, 36px);
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    transition: 0.3s;
+}
+
+.link-btn:hover {
+    background: linear-gradient(90deg, rgba(60, 146, 230, 1) 0%, rgba(124, 0, 255, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hover-btn {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.github-btn {
+    width: 96px;
+    height: 96px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+}
+
+.github-btn svg {
+    width: 10vh;
+    transition: 0.3s;
+}
+
+.github-btn svg:hover path {
+    fill: url(#grad);
+  }
+  
+  #grad stop:first-child {
+    stop-color: rgba(60, 146, 230, 1);
+  }
+  
+  #grad stop:last-child {
+    stop-color: rgba(124, 0, 255, 1);
+  }
+
+
+@media screen and (max-width: 1024px) {
+    .github-btn {
+        --github-button-size: 50px;
+    }
+}
