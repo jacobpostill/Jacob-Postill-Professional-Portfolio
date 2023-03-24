@@ -1,17 +1,25 @@
 import React from 'react';
+import profilepicture from '../../images/profilepicture.jpg';
+import '../../css/about.css';
 
 export default function About() {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
+    <div className="about-container">
+      <div className="about-image">
+        <img src={profilepicture} alt="profile" />
+      </div>
+      <div className="about-text">
+        <h1>About Jacob Postill</h1>
+        <p>
+          Hi there, my name is Jacob Postill! I am 19 years old and 
+          looking to strengthen my knowledge of coding. I have a background 
+          in python and I am looking to learn as many languages as possible. 
+          I have previously worked in an app start-up to help aid people in 
+          the Canadian immigration process. As well, I used to work at a 
+          butcher shop! I am from Toronto and love to go to the gym, play 
+          basketball and video games. To reach out to me click the contact section!
+        </p>
+      </div>
     </div>
   );
 }
