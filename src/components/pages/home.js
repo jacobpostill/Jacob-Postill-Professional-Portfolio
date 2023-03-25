@@ -20,19 +20,19 @@ export default function Home({ currentPage, handlePageChange }) {
           contact me.
         </h2>
         <div className="image-row">
-          <a href="#about" onClick={() => handlePageChange('About')}>
+          <a href="/about" >
             <img className="bubbles" src={aboutme} alt="aboutme" />
           </a>
 
-          <a href="#Portfolio" onClick={() => handlePageChange('Portfolio')}>
+          <a href="/Portfolio" >
             <img className="bubbles" src={portfolio} alt="portfolio" />
           </a>
 
-          <a href="#resume" onClick={() => handlePageChange('Resume')}>
+          <a href="/resume" >
             <img className="bubbles" src={resume} alt="resume" />
           </a>
 
-          <a href="#contact" onClick={() => handlePageChange('Contact')}>
+          <a href="/contact" >
             <img className="bubbles" src={contactme} alt="contactme" />
           </a>
         </div>
