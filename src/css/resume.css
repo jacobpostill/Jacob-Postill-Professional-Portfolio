@@ -7,6 +7,8 @@
     justify-content: right;
     align-items: right;
     width:50%;
+    margin-left: 100px;
+
 
 }
 
@@ -15,9 +17,13 @@
     justify-content: left;
     align-items: left;
     flex-direction: column;
+    margin-left: 100px;
+
 
 }
-
+.resume-container h1{
+white-space: nowrap;
+}
 
 .expierence{
     margin-bottom: 25px;
@@ -93,4 +99,92 @@
 .downloadButton:hover {
     background-color: skyblue;
   }
-  
+
+  @media screen and (max-width: 1650px) {
+    .container-left {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width:50%;
+        margin-left: 120px;    
+
+    }
+    
+    .container-right {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
+        margin-left: 100px;
+    
+    
+    }
+  }
+
+  @media screen and (max-width: 1550px) {
+    .container-left {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width:50%;
+        margin-left: 150px;    
+
+    }}
+
+
+    @media screen and (max-width: 1450px) {
+        .container-left {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            width:50%;
+            margin-left: 190px;    
+    
+        }}
+
+    @media screen and (max-width: 1350px) {
+        .container-left {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            width:50%;
+            margin-left: 220px;    
+    
+        }}
+    
+    @media screen and (max-width: 1250px) {
+        .container-left {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            width:50%;
+            margin-left: 250px;    
+    
+    }}
+
+    @media screen and (max-width: 1150px) {
+        .container-left {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            width:50%;
+            margin-left: 280px;    
+    
+    }}
+
+    @media screen and (max-width: 1000px) {
+        .container-left {
+            display: flex;
+            justify-content: right;
+            align-items: right;
+            width:50%;
+            margin-left: 310px;    
+    
+    }}
+
+    @media screen and (max-width: 800px) {
+        .resume-container {
+            display: flex;
+            flex-direction: column;
+    
+    }}

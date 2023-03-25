@@ -1,5 +1,7 @@
 import React from 'react';
 import '../css/NavTabs.css';
+import { Link } from "react-router-dom";
+import topprofile from '../images/topprofile.jpg';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
@@ -7,51 +9,52 @@ function NavTabs({ currentPage, handlePageChange }) {
       <div className='spacing'></div>
       <h1 className="title">Jacob Postill</h1>
       <h2 className="title-descrption">Public Website - 2023</h2>
+      <img src={topprofile} alt='topprofile' className='topprofile'></img>
       <ul className="nav nav-tabs">
         <li className="nav-item">
-          <a
-            href="/"
+          <Link
+            to="/"
             onClick={() => handlePageChange('Home')}
             className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
           >
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="/about"
+          <Link
+            to="/about"
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >
             About
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="/portfolio"
+          <Link
+            to="/portfolio"
             onClick={() => handlePageChange('Portfolio')}
             className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
           >
             Portfolio
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="/resume"
+          <Link
+            to="/resume"
             onClick={() => handlePageChange('Resume')}
             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
           >
             Resume
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             onClick={() => handlePageChange('Contact')}
             className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

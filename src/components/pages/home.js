@@ -1,10 +1,13 @@
 import React from 'react';
-import aboutme from '../../images/home/aboutme.jpg';
-import contactme from '../../images/home/contactme.jpg';
+import aboutme from '../../images/home/aboutme.png';
+import contactme from '../../images/home/contactme.png';
 import portfolio from '../../images/home/portfolio.png';
 import resume from '../../images/home/resume.png';
 import sideimage from '../../images/home/sideimage.png';
 import '../../css/home.css';
+import '../../css/NavTabs.css';
+import { Link } from "react-router-dom";
+
 
 export default function Home({ currentPage, handlePageChange }) {
   return (
@@ -20,21 +23,38 @@ export default function Home({ currentPage, handlePageChange }) {
           contact me.
         </h2>
         <div className="image-row">
-          <a href="/about" >
-            <img className="bubbles" src={aboutme} alt="aboutme" />
-          </a>
+          <div className='row1'>
+        <Link
+            to="/about"
+            onClick={() => handlePageChange('About')}
+            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
+               <img className="bubbles" src={aboutme} alt="aboutme" />
+          </Link>
 
-          <a href="/Portfolio" >
+          <Link
+            to="/portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}>
             <img className="bubbles" src={portfolio} alt="portfolio" />
-          </a>
+          </Link>
+          </div>
+          <div className='row2'>
 
-          <a href="/resume" >
+          <Link
+            to="/resume"
+            onClick={() => handlePageChange('Resume')}
+            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
             <img className="bubbles" src={resume} alt="resume" />
-          </a>
+          </Link>
 
-          <a href="/contact" >
-            <img className="bubbles" src={contactme} alt="contactme" />
-          </a>
+          <Link
+            to="/contact"
+            onClick={() => handlePageChange('Contact')}
+            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+              <img className="bubbles" src={contactme} alt="contactme" />
+          </Link>
+          </div>
+
         </div>
       </div>
     </div>

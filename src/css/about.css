@@ -23,3 +23,40 @@
 .about-text p{
 font-size: 18px;
   }
+
+
+    @media screen and (max-width: 1500px) {
+      .about-text {
+        flex: 1;
+        padding: 0 20px;
+      }
+    
+      .about-image img {
+        padding: 10px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain; 
+      }
+    
+      .about-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-right: 20%;
+        margin-bottom: 20px;
+      }
+    
+      .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .about-text p {
+        font-size: 18px;
+        word-wrap: break-word; 
+        text-align: justify;
+        hyphens: auto;
+      }
+    }

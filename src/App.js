@@ -13,20 +13,18 @@ const App = () => {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <>
+    <BrowserRouter>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
       <div className="App">
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About/>}/>  
-            <Route path='/portfolio' element={<Portfolio/>}/>  
-            <Route path='/resume' element={<Resume/>}/>  
-            <Route path='/contact' element={<Contact/>}/>  
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home currentPage={currentPage} handlePageChange={handlePageChange} />} />
+          <Route path='/about' element={<About/>}/>  
+          <Route path='/portfolio' element={<Portfolio/>}/>  
+          <Route path='/resume' element={<Resume/>}/>  
+          <Route path='/contact' element={<Contact/>}/>  
+        </Routes>
       </div>
-    </>
+    </BrowserRouter>
   )
 }
 
