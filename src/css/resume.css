@@ -1,0 +1,96 @@
+.languages {
+  width: 50%;
+}
+
+.container-left {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width:50%;
+
+}
+
+.container-right {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+
+}
+
+
+.expierence{
+    margin-bottom: 25px;
+}
+  
+.expierence li{
+    font-size: 17px;
+    white-space: nowrap;
+
+}
+
+.skills li{
+    font-size: 17px;
+}
+ 
+.languages li{
+    font-size: 17px;
+}
+
+.expierence h2{
+    font-size: 40px;
+    white-space: nowrap;
+
+}
+.skills h2{
+    font-size: 40px;
+}
+.languages h2{
+    font-size: 40px;
+}
+
+.resume-container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-left: 40px;
+
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-container {
+    margin-left: 17.5%;
+    margin-top: 10px;
+
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.resume-container p{
+    font-size: 20px;
+
+}
+
+.downloadButton{
+    color: white;
+    background-color: royalblue;
+    border-radius: 5px;
+    font-size: 30px;
+
+
+}
+
+.downloadButton:hover {
+    background-color: skyblue;
+  }
+  

@@ -23,6 +23,10 @@
   background-size: cover;
   background-position: center center;
 }
+.nav-tabs .nav-link {
+  border: none;
+  text-decoration: none;
+  }
 
 .nav-tabs {
   position: absolute;
@@ -41,6 +45,15 @@
   text-align: center;
 }
 
+.nav-item.title {
+  order: -1;
+}
+
+.nav-item.title .nav-link {
+  opacity: 1;
+  cursor: default;
+}
+
 .nav-link {
   color: #fff;
   font-size: 1.2rem;
@@ -49,8 +62,27 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.nav-link:hover {
-  opacity: 1;
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+  font-weight: bold;
+}
+.title-descrption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+  font-weight: bold;
+}
+.spacing{
+height: 100px;
 }
 
-
+.nav-item a{
+  color: white;
+  font-weight: bold;
+}

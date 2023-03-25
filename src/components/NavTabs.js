@@ -4,10 +4,10 @@ import '../css/NavTabs.css';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div className='navTabsClass'>
+      <div className='spacing'></div>
+      <h1 className="title">Jacob Postill</h1>
+      <h2 className="title-descrption">Public Website - 2023</h2>
     <ul className="nav nav-tabs">
-      <li className="nav-item title">
-        <a href="#Jacob" className="nav-link">Jacob</a>
-      </li>
       <li className="nav-item">
         <a
           href="#home"
