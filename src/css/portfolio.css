@@ -13,6 +13,23 @@
     color: white;
 }
 
+.project-img {
+    margin: 10px;
+    transition: 0.3s;
+    transition: 0.3s;
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.project-img {
+    height: 350px;    
+    width: 700px;
+  }
+
 .profolio-container {
     max-width: 1480px;
     margin: 20px;
@@ -32,31 +49,33 @@
     opacity: 0.6;
 }
 
-.project-img {
-    margin: 10px;
-    transition: 0.3s;
-    position: relative;
-    transition: 0.3s;
-    max-width: 100%;
-    max-height: 100%;
-    height: auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+.github-btn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    width: 96px;
+    height: 96px;
 }
 
-.project-img {
-    width: 700px;
-    height: 350px;
+.github-btn svg {
+    width: 10vh;
+    transition: 0.3s;
+}
+
+.github-btn svg:hover path {
+    fill: url(#grad);
   }
 
 .link-btn {
     background: none;
     border: none;
-    font-size: clamp(16px, 3vmin, 36px);
     position: absolute;
     top: 11%;
     left: 3%;
     transition: 0.3s;
+    font-size: clamp(16px, 3vmin, 36px);
 }
 
 .link-btn:hover {
@@ -69,25 +88,6 @@
     opacity: 0;
     transition: 0.3s;
 }
-
-.github-btn {
-    width: 96px;
-    height: 96px;
-    background: none;
-    border: none;
-    position: absolute;
-    top: 25%;
-    left: 3%;
-}
-
-.github-btn svg {
-    width: 10vh;
-    transition: 0.3s;
-}
-
-.github-btn svg:hover path {
-    fill: url(#grad);
-  }
   
   #grad stop:first-child {
     stop-color: rgba(60, 146, 230, 1);
