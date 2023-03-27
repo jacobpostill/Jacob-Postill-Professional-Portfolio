@@ -6,8 +6,7 @@
 In this project you will be able to find a portfolio for Jacob Postill. This 
 contains a home page, about page, portfolio, resume, and the ability to contact him.
 
-https://thejatemate.herokuapp.com/
-
+https://jacobpostillprofile.herokuapp.com/
 
 ## Table of Contents
 
